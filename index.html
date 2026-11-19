@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LearnSphere — The next-generation online learning platform. Master in-demand skills with expert-led courses, AI-powered paths, and a vibrant global community." />
+  <meta name="keywords" content="online learning, education, courses, e-learning, skills, LearnSphere" />
+  <meta property="og:title" content="LearnSphere — Learn Without Limits" />
+  <meta property="og:description" content="Master any skill with AI-powered learning paths, world-class instructors, and a thriving community." />
+  <meta property="og:type" content="website" />
+  <title>LearnSphere — Learn Without Limits</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌐</text></svg>" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <header>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+      <div class="nav-inner">
+
+        <!-- Logo -->
+        <a href="#" class="nav-logo" aria-label="LearnSphere home">
+          <img src="logo.png" alt="LearnSphere logo" width="36" height="36" />
+          <span class="nav-logo-text">LearnSphere</span>
+        </a>
+
+        <!-- Desktop Links -->
+        <ul class="nav-links" role="list">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+
+        <!-- Desktop CTA -->
+        <div class="nav-cta">
+          <button class="btn-ghost" onclick="document.getElementById('cta-section').scrollIntoView({behavior:'smooth'})">Log in</button>
+          <button class="btn-primary" id="nav-cta-btn" onclick="document.getElementById('cta-section').scrollIntoView({behavior:'smooth'})">
+            <span>Start Free Trial</span>
+          </button>
+        </div>
+
+        <!-- Hamburger (mobile) -->
+        <button class="hamburger" id="hamburger-btn" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+    <a href="#features" class="mobile-link">Features</a>
+    <a href="#how-it-works" class="mobile-link">How It Works</a>
+    <a href="#testimonials" class="mobile-link">Reviews</a>
+    <a href="#pricing" class="mobile-link">Pricing</a>
+    <button class="btn-primary" onclick="document.getElementById('cta-section').scrollIntoView({behavior:'smooth'})">
+      <span>Start Free Trial →</span>
+    </button>
+  </nav>
+  <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <main>
+    <section class="hero" id="home" aria-label="Hero section">
+      <!-- Background orbs -->
+      <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-3" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <!-- Badge -->
+        <div class="hero-badge" aria-label="New feature">
+          <span class="dot" aria-hidden="true"></span>
+          Introducing AI-Powered Learning Paths
+        </div>
+
+        <!-- Heading -->
+        <h1 class="hero-heading">
+          Learn Without<br />
+          <span class="gradient-text">Limits.</span>
+        </h1>
+
+        <!-- Description -->
+        <p class="hero-desc">
+          Unlock your potential with expert-led courses, personalized AI learning paths,
+          and a global community of 2M+ learners. Your next breakthrough starts here.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-cta">
+          <button class="btn-hero-primary" id="hero-cta-primary" onclick="document.getElementById('cta-section').scrollIntoView({behavior:'smooth'})">
+            Start Learning Free
+            <span class="icon-arrow" aria-hidden="true">→</span>
+          </button>
+          <button class="btn-hero-secondary" id="hero-cta-secondary" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">
+            <span aria-hidden="true">▶</span>
+            Explore Courses
+          </button>
+        </div>
+      </div>
+
+      <!-- Hero Image -->
+      <div class="hero-image-wrapper">
+        <div class="hero-image-frame">
+          <img src="hero.png" alt="LearnSphere platform interface showing course dashboard" width="900" height="500" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- Stats Row -->
+      <div class="hero-stats" role="list" aria-label="Platform statistics">
+        <div class="stat-item" role="listitem">
+          <div class="stat-value">2M+</div>
+          <div class="stat-label">Active Learners</div>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item" role="listitem">
+          <div class="stat-value">500+</div>
+          <div class="stat-label">Expert Courses</div>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item" role="listitem">
+          <div class="stat-value">98%</div>
+          <div class="stat-label">Satisfaction Rate</div>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item" role="listitem">
+          <div class="stat-value">150+</div>
+          <div class="stat-label">Countries</div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         TRUSTED BY
+    ============================================================ -->
+    <section class="trusted-section" aria-label="Trusted by leading organizations">
+      <div class="container">
+        <p class="trusted-label">Trusted by learners from world-class organizations</p>
+        <div class="trusted-logos" role="list">
+          <span class="trusted-logo-item" role="listitem">Google</span>
+          <span class="trusted-logo-item" role="listitem">Microsoft</span>
+          <span class="trusted-logo-item" role="listitem">Amazon</span>
+          <span class="trusted-logo-item" role="listitem">Meta</span>
+          <span class="trusted-logo-item" role="listitem">Stripe</span>
+          <span class="trusted-logo-item" role="listitem">Figma</span>
+          <span class="trusted-logo-item" role="listitem">Shopify</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         FEATURES SECTION
+    ============================================================ -->
+    <section class="features-section" id="features" aria-label="Platform features">
+      <div class="container">
+        <div class="text-center animate-on-scroll">
+          <span class="section-label">Why LearnSphere</span>
+          <h2 class="section-heading">Everything you need to <span class="gradient-text">master any skill</span></h2>
+          <p class="section-desc">A complete ecosystem built to make learning effective, engaging, and enjoyable — from day one to career milestone.</p>
+        </div>
+
+        <div class="features-grid" role="list">
+
+          <article class="feature-card animate-on-scroll animate-delay-1" role="listitem">
+            <div class="feature-icon-wrap icon-purple" aria-hidden="true">🤖</div>
+            <h3 class="feature-title">AI-Powered Paths</h3>
+            <p class="feature-desc">Our intelligent engine crafts a personalized curriculum based on your goals, pace, and learning style — adapting as you grow.</p>
+          </article>
+
+          <article class="feature-card animate-on-scroll animate-delay-2" role="listitem">
+            <div class="feature-icon-wrap icon-cyan" aria-hidden="true">🎓</div>
+            <h3 class="feature-title">World-Class Instructors</h3>
+            <p class="feature-desc">Learn from industry veterans and pioneers — tech leaders, creative professionals, and academic experts from top institutions.</p>
+          </article>
+
+          <article class="feature-card animate-on-scroll animate-delay-3" role="listitem">
+            <div class="feature-icon-wrap icon-pink" aria-hidden="true">⚡</div>
+            <h3 class="feature-title">Interactive Projects</h3>
+            <p class="feature-desc">Build real, portfolio-worthy projects with hands-on coding environments, design tools, and instant feedback loops.</p>
+          </article>
+
+          <article class="feature-card animate-on-scroll animate-delay-4" role="listitem">
+            <div class="feature-icon-wrap icon-indigo" aria-hidden="true">🏆</div>
+            <h3 class="feature-title">Verified Certificates</h3>
+            <p class="feature-desc">Earn industry-recognized credentials that you can share directly to LinkedIn, your résumé, or any professional portfolio.</p>
+          </article>
+
+          <article class="feature-card animate-on-scroll animate-delay-5" role="listitem">
+            <div class="feature-icon-wrap icon-green" aria-hidden="true">👥</div>
+            <h3 class="feature-title">Vibrant Community</h3>
+            <p class="feature-desc">Connect with 2M+ learners worldwide in topic-specific forums, live study groups, mentoring sessions, and local meetups.</p>
+          </article>
+
+          <article class="feature-card animate-on-scroll animate-delay-6" role="listitem">
+            <div class="feature-icon-wrap icon-orange" aria-hidden="true">📱</div>
+            <h3 class="feature-title">Learn Anywhere</h3>
+            <p class="feature-desc">Seamless offline mode, mobile apps for iOS and Android, and smart progress sync so you never lose your momentum.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         HOW IT WORKS
+    ============================================================ -->
+    <section class="how-section" id="how-it-works" aria-label="How LearnSphere works">
+      <div class="container">
+        <div class="text-center animate-on-scroll">
+          <span class="section-label">The Process</span>
+          <h2 class="section-heading">Get started in <span class="gradient-text">four simple steps</span></h2>
+          <p class="section-desc">From sign-up to certified — your journey to mastery is streamlined and supported every step of the way.</p>
+        </div>
+
+        <div class="steps-grid" role="list">
+
+          <div class="step-card animate-on-scroll animate-delay-1" role="listitem">
+            <div class="step-number" aria-label="Step 1">1</div>
+            <h3 class="step-title">Create Your Account</h3>
+            <p class="step-desc">Sign up in seconds with email or social login. No credit card required to get started.</p>
+          </div>
+
+          <div class="step-card animate-on-scroll animate-delay-2" role="listitem">
+            <div class="step-number" aria-label="Step 2">2</div>
+            <h3 class="step-title">Set Your Goals</h3>
+            <p class="step-desc">Tell us your skill level and ambitions. Our AI builds a custom path just for you in under a minute.</p>
+          </div>
+
+          <div class="step-card animate-on-scroll animate-delay-3" role="listitem">
+            <div class="step-number" aria-label="Step 3">3</div>
+            <h3 class="step-title">Learn & Build</h3>
+            <p class="step-desc">Dive into bite-sized lessons, hands-on projects, and live sessions that keep you engaged and progressing.</p>
+          </div>
+
+          <div class="step-card animate-on-scroll animate-delay-4" role="listitem">
+            <div class="step-number" aria-label="Step 4">4</div>
+            <h3 class="step-title">Earn & Advance</h3>
+            <p class="step-desc">Complete your path, earn verified certificates, and showcase your new skills to employers worldwide.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         TESTIMONIALS
+    ============================================================ -->
+    <section class="testimonials-section" id="testimonials" aria-label="Student testimonials">
+      <div class="container">
+        <div class="text-center animate-on-scroll">
+          <span class="section-label">Testimonials</span>
+          <h2 class="section-heading">Loved by <span class="gradient-text">learners worldwide</span></h2>
+          <p class="section-desc">Don't just take our word for it — here's what our community of 2 million learners has to say.</p>
+        </div>
+
+        <div class="testimonials-grid" role="list">
+
+          <article class="testimonial-card animate-on-scroll animate-delay-1" role="listitem">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+            </div>
+            <blockquote class="testimonial-quote">
+              "LearnSphere completely transformed how I approach learning. The AI path felt like having a personal mentor — I landed my dream UX design job within 4 months."
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar avatar-purple" aria-hidden="true">SL</div>
+              <div>
+                <div class="author-name">Sofia L.</div>
+                <div class="author-role">UX Designer at Spotify</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card animate-on-scroll animate-delay-2" role="listitem">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+            </div>
+            <blockquote class="testimonial-quote">
+              "I've tried a dozen platforms. LearnSphere is the only one that kept me engaged for more than a week. The interactive projects are genuinely fun and deeply practical."
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar avatar-cyan" aria-hidden="true">MK</div>
+              <div>
+                <div class="author-name">Marcus K.</div>
+                <div class="author-role">Software Engineer at Amazon</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card animate-on-scroll animate-delay-3" role="listitem">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+            </div>
+            <blockquote class="testimonial-quote">
+              "As a busy parent, I needed something flexible. LearnSphere's offline mode and 15-minute micro-lessons fit perfectly into my schedule. I'm now a certified data analyst!"
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar avatar-pink" aria-hidden="true">AP</div>
+              <div>
+                <div class="author-name">Aisha P.</div>
+                <div class="author-role">Data Analyst at Stripe</div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         PRICING SECTION
+    ============================================================ -->
+    <section class="pricing-section" id="pricing" aria-label="Pricing plans">
+      <div class="container">
+        <div class="text-center animate-on-scroll">
+          <span class="section-label">Pricing</span>
+          <h2 class="section-heading">Simple, <span class="gradient-text">transparent pricing</span></h2>
+          <p class="section-desc">Start for free, upgrade when you're ready. Cancel anytime — no contracts, no surprises.</p>
+        </div>
+
+        <div class="pricing-grid" role="list">
+
+          <!-- Free Plan -->
+          <article class="pricing-card animate-on-scroll animate-delay-1" role="listitem" aria-label="Free plan">
+            <div class="pricing-plan">Free</div>
+            <div class="pricing-price">
+              <span class="price-currency">$</span>
+              <span class="price-amount">0</span>
+              <span class="price-period">/ month</span>
+            </div>
+            <p class="pricing-desc">Perfect for exploring and getting started with foundational courses.</p>
+            <div class="pricing-divider" aria-hidden="true"></div>
+            <ul class="pricing-features" role="list">
+              <li class="pricing-feature included" role="listitem">
+                <span class="check-icon yes" aria-label="Included">✓</span> 10 free courses
+              </li>
+              <li class="pricing-feature included" role="listitem">
+                <span class="check-icon yes" aria-label="Included">✓</span> Community access
+              </li>
+              <li class="pricing-feature included" role="listitem">
+                <span class="check-icon yes" aria-label="Included">✓</span> Mobile app
+              </li>
+              <li class="pricing-feature" role="listitem">
+                <span class="check-icon no" aria-label="Not included">✕</span> AI learning paths
+              </li>
+              <li class="pricing-feature" role="listitem">
+                <span class="check-icon no" aria-label="Not included">✕</span> Verified certificates
+              </li>
+              <li class="pricing-feature" role="listitem">
+                <span class="check-icon no" aria-label="Not included">✕</span> Offline mode
+              </li>
+            </ul>
+            <button class="btn-pricing" id="pricing-free-btn">Get Started Free</button>
+          </article>
+
+          <!-- Pro Plan (Featured) -->
+          <article class="pricing-card featured animate-on-scroll animate-delay-2" role="listitem" aria-label="Pro plan, most popular">
+            <div class="pricing-badge" aria-label="Most popular">Most Popular</div>
+            <div class="pricing-plan">Pro</div>
+            <div class="pricing-price">
+              <span class="price-currency">$</span>
+              <span class="price-amount gradient-text">29</span>
+              <span class="price-period">/ month</span>
+            </div>
+            <p class="pricing-desc">The complete toolkit for serious learners ready to accelerate their careers.</p>
+            <div class="pricing-divider" aria-hidden="true"></div>
+            <ul class="pricing-features" role="list">
+              <li class="pricing-feature included" role="listitem">
+                <span class="check-icon yes" aria-label="Included">✓</span> Unlimited courses
+              </li>
+              <li class="pricing-feature included" role="listitem">
+                <span class="check-icon yes" aria-label="Included">✓</span> AI learning paths
+              </li>
+              <li class="pricing-feature included" role="listitem">
+                <span class="check-icon yes" aria-label="Included">✓</span> Verified certificates
+              </li>
+              <li class="pricing-feature included" role="listitem">
+                <span class="check-icon yes" aria-label="Included">✓</span> Offline mode
+              </li>
+              <li class="pricing-feature included" role="listitem">
+                <span class="check-icon yes" aria-label="Included">✓</span> Priority support
+              </li>
+              <li class="pricing-feature" role="listitem">
+                <span class="check-icon no" aria-label="Not included">✕</span> 1-on-1 mentoring
+              </li>
+            </ul>
+            <button class="btn-pricing btn-primary" id="pricing-pro-btn">Start 14-Day Free Trial</button>
+          </article>
+
+          <!-- Team Plan -->
+          <article class="pricing-card animate-on-scroll animate-delay-3" role="listitem" aria-label="Team plan">
+            <div class="pricing-plan">Team</div>
+            <div class="pricing-price">
+              <span class="price-currency">$</span>
+              <span class="price-amount">79</span>
+              <span class="price-period">/ month</span>
+            </div>
+            <p class="pricing-desc">Built for teams and organizations that want to upskill at scale.</p>
+            <div class="pricing-divider" aria-hidden="true"></div>
+            <ul class="pricing-features" role="list">
+              <li class="pricing-feature included" role="listitem">
+                <span class="check-icon yes" aria-label="Included">✓</span> Everything in Pro
+              </li>
+              <li class="pricing-feature included" role="listitem">
+                <span class="check-icon yes" aria-label="Included">✓</span> 1-on-1 mentoring
+              </li>
+              <li class="pricing-feature included" role="listitem">
+                <span class="check-icon yes" aria-label="Included">✓</span> Team dashboard
+              </li>
+              <li class="pricing-feature included" role="listitem">
+                <span class="check-icon yes" aria-label="Included">✓</span> Custom learning tracks
+              </li>
+              <li class="pricing-feature included" role="listitem">
+                <span class="check-icon yes" aria-label="Included">✓</span> Dedicated account manager
+              </li>
+              <li class="pricing-feature included" role="listitem">
+                <span class="check-icon yes" aria-label="Included">✓</span> SSO & enterprise security
+              </li>
+            </ul>
+            <button class="btn-pricing" id="pricing-team-btn">Contact Sales</button>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         CTA SECTION
+    ============================================================ -->
+    <section class="cta-section" id="cta-section" aria-label="Call to action">
+      <div class="container">
+        <div class="cta-box animate-on-scroll">
+          <h2 class="cta-heading">
+            Ready to <span class="gradient-text">transform</span><br />your future?
+          </h2>
+          <p class="cta-desc">Join over 2 million learners who have already taken the first step. Your journey to mastery starts today — for free.</p>
+          <div class="cta-buttons">
+            <button class="btn-hero-primary" id="cta-start-btn">
+              Get Started — It's Free
+              <span class="icon-arrow" aria-hidden="true">→</span>
+            </button>
+            <button class="btn-hero-secondary" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">
+              <span aria-hidden="true">▶</span>
+              See All Features
+            </button>
+          </div>
+          <p class="cta-note">No credit card required · Cancel anytime · 14-day free trial on Pro</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <a href="#" class="nav-logo" aria-label="LearnSphere home">
+            <img src="logo.png" alt="LearnSphere logo" width="32" height="32" />
+            <span class="nav-logo-text">LearnSphere</span>
+          </a>
+          <p class="footer-brand-desc">
+            The world's most loved learning platform. Empowering 2M+ learners to master the skills of tomorrow, today.
+          </p>
+          <div class="footer-socials" role="list" aria-label="Social media links">
+            <a href="#" class="social-btn" role="listitem" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-btn" role="listitem" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-btn" role="listitem" aria-label="YouTube">▶</a>
+            <a href="#" class="social-btn" role="listitem" aria-label="Instagram">◈</a>
+          </div>
+        </div>
+
+        <!-- Product Links -->
+        <nav aria-label="Product links">
+          <h3 class="footer-col-title">Product</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#">Course Catalog</a></li>
+            <li><a href="#">Mobile App</a></li>
+          </ul>
+        </nav>
+
+        <!-- Company Links -->
+        <nav aria-label="Company links">
+          <h3 class="footer-col-title">Company</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press Kit</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Support Links -->
+        <nav aria-label="Support links">
+          <h3 class="footer-col-title">Support</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Community Forum</a></li>
+            <li><a href="#">Status Page</a></li>
+            <li><a href="#">Affiliate Program</a></li>
+            <li><a href="#">Teach on LearnSphere</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 LearnSphere Inc. All rights reserved.</p>
+        <div class="footer-bottom-links" role="list">
+          <a href="#" role="listitem">Privacy Policy</a>
+          <a href="#" role="listitem">Terms of Service</a>
+          <a href="#" role="listitem">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
+  <script>
+    'use strict';
+
+    // ---- Navbar scroll behaviour ----
+    const navbar = document.getElementById('navbar');
+    const scrollThreshold = 50;
+
+    function handleNavbarScroll() {
+      navbar.classList.toggle('scrolled', window.scrollY > scrollThreshold);
+    }
+
+    window.addEventListener('scroll', handleNavbarScroll, { passive: true });
+    handleNavbarScroll(); // run once on load
+
+    // ---- Mobile nav toggle ----
+    const hamburger   = document.getElementById('hamburger-btn');
+    const mobileNav   = document.getElementById('mobile-nav');
+    const navOverlay  = document.getElementById('nav-overlay');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    function openNav() {
+      hamburger.classList.add('open');
+      mobileNav.classList.add('open');
+      navOverlay.classList.add('open');
+      hamburger.setAttribute('aria-expanded', 'true');
+      mobileNav.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeNav() {
+      hamburger.classList.remove('open');
+      mobileNav.classList.remove('open');
+      navOverlay.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      mobileNav.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.contains('open') ? closeNav() : openNav();
+    });
+
+    navOverlay.addEventListener('click', closeNav);
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        closeNav();
+      });
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileNav.classList.contains('open')) closeNav();
+    });
+
+    // ---- Intersection Observer for scroll animations ----
+    const animateEls = document.querySelectorAll('.animate-on-scroll');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target); // animate once only
+        }
+      });
+    }, {
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    animateEls.forEach(el => observer.observe(el));
+
+    // ---- Active nav link highlighting on scroll ----
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    function highlightActiveNav() {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 120;
+        if (window.scrollY >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.style.color = '';
+        if (link.getAttribute('href') === `#${current}`) {
+          link.style.color = 'var(--clr-text-primary)';
+        }
+      });
+    }
+
+    window.addEventListener('scroll', highlightActiveNav, { passive: true });
+
+    // ---- Smooth-scroll for nav links ----
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', (e) => {
+        const target = document.querySelector(anchor.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // ---- Button ripple effect ----
+    function createRipple(event) {
+      const btn = event.currentTarget;
+      const ripple = document.createElement('span');
+      const rect   = btn.getBoundingClientRect();
+      const size   = Math.max(rect.width, rect.height) * 1.5;
+      const x      = event.clientX - rect.left - size / 2;
+      const y      = event.clientY - rect.top  - size / 2;
+
+      ripple.style.cssText = `
+        position: absolute;
+        width: ${size}px;
+        height: ${size}px;
+        left: ${x}px;
+        top: ${y}px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        transform: scale(0);
+        animation: ripple-anim 0.55s ease-out forwards;
+        pointer-events: none;
+      `;
+
+      btn.appendChild(ripple);
+      ripple.addEventListener('animationend', () => ripple.remove());
+    }
+
+    // Inject ripple keyframes
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes ripple-anim {
+        to { transform: scale(1); opacity: 0; }
+      }
+    `;
+    document.head.appendChild(style);
+
+    document.querySelectorAll('.btn-hero-primary, .btn-primary, .btn-pricing.btn-primary').forEach(btn => {
+      btn.style.position = 'relative';
+      btn.style.overflow = 'hidden';
+      btn.addEventListener('click', createRipple);
+    });
+
+    console.log('%cLearnSphere 🌐', 'font-size:1.5rem; font-weight:900; color:#8b5cf6;');
+    console.log('%cBuilt with ❤ — HTML, CSS & Vanilla JS', 'color:#94a3b8');
+  </script>
+
+</body>
+</html>
